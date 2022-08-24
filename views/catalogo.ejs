@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seccion catalogo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+   <body>
+    <h2>seccion de catalogo</h2>
+    <ul>
+        <% for(let i= 0 ; i < products.length; i++) {  %>
+
+    <!-- <img src="/images/42454.jpg" width=200> -->
+      <li>
+        <!-- estos hipervinculos van a llevar a la pagina de detalle catalogo la cual se usara el metodo query string -->
+        <a href="/detalleCatalogo/<%= products[i].id %>" >  historia   </a>
+       
+        <!-- Quizas la mejor opcion es usar rutas parametrizadas  -->
+      </li>
+    <%  }  %>
+    </ul> 
+  </body>
+</html>
